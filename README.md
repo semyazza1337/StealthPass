@@ -1,0 +1,2 @@
+# StealthPass
+Basic password manager

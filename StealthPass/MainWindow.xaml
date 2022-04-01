@@ -30,39 +30,102 @@
         <Button x:Name="showPasswordsButton" Content="Show Passwords"
                 Grid.Row="1" Grid.Column="0" Margin="0,2,3,2"
                 BorderBrush="#FFB026FF" Background="#FFB026FF" Foreground="#FFEAD8D8"
-                FontFamily="Beckman" FontSize="15" Click="showPasswordsButton_Click"/>
+                FontFamily="Beckman" FontSize="15" Click="showPasswordsButton_Click">
+            <Button.Effect>
+                <DropShadowEffect
+                 ShadowDepth="4"
+                 Direction="330"
+                 Color="Black"
+                 Opacity="0.5"
+                 BlurRadius="4"/>
+            </Button.Effect>
+        </Button>
         <Button x:Name="addPasswordsButton" Content="Add Passwords"
                 Grid.Row="2" Grid.Column="0" Margin="0,2,3,2"
                 BorderBrush="#FFB026FF" Background="#FFB026FF" Foreground="#FFEAD8D8"
-                FontFamily="Beckman" FontSize="15" Click="addPasswordsButton_Click"/>
+                FontFamily="Beckman" FontSize="15" Click="addPasswordsButton_Click">
+            <Button.Effect>
+                <DropShadowEffect
+                 ShadowDepth="4"
+                 Direction="330"
+                 Color="Black"
+                 Opacity="0.5"
+                 BlurRadius="4"/>
+            </Button.Effect>
+        </Button>
         <Button x:Name="showSettingsButton" Content="Show Settings"
                 Grid.Row="3" Grid.Column="0" Margin="0,2,3,2"
                 BorderBrush="#FFB026FF" Background="#FFB026FF" Foreground="#FFEAD8D8"
-                FontFamily="Beckman" FontSize="15"/>
+                FontFamily="Beckman" FontSize="15">
+            <Button.Effect>
+                <DropShadowEffect
+                 ShadowDepth="4"
+                 Direction="330"
+                 Color="Black"
+                 Opacity="0.5"
+                 BlurRadius="4"/>
+            </Button.Effect>
+        </Button>
         <Button x:Name="logoutButton" Content="Logout"
                 Grid.Row="4" Grid.Column="0" Margin="0,2,3,2"
                 BorderBrush="#FFB026FF" Background="#FFB026FF" Foreground="#FFEAD8D8"
-                FontFamily="Beckman" FontSize="15" Click="logoutButton_Click"/>
+                FontFamily="Beckman" FontSize="15" Click="logoutButton_Click">
+            <Button.Effect>
+                <DropShadowEffect
+                 ShadowDepth="4"
+                 Direction="330"
+                 Color="Black"
+                 Opacity="0.5"
+                 BlurRadius="4"/>
+            </Button.Effect>
+        </Button>
         <Button x:Name="exitButton" Content="Exit"
                 Grid.Row="5" Grid.Column="0" Margin="0,2,3,2"
                 BorderBrush="#FFB026FF" Background="#FFB026FF" Foreground="#FFEAD8D8"
-                FontFamily="Beckman" FontSize="15" Click="exitButton_Click"/>
+                FontFamily="Beckman" FontSize="15" Click="exitButton_Click">
+            <Button.Effect>
+                <DropShadowEffect
+                 ShadowDepth="4"
+                 Direction="330"
+                 Color="Black"
+                 Opacity="0.5"
+                 BlurRadius="4"/>
+            </Button.Effect>
+        </Button>
 
-        <!-- Logged in screen -->
+        <!-- Welcoming screen -->
         <Label x:Name="welcomeBackLabel" Content="Welcome Back!"
                Foreground="#FFB026FF" 
                FontFamily="Beckman" FontSize="75"
                VerticalAlignment="Center" HorizontalAlignment="Center"
                Grid.Column="2" Grid.ColumnSpan="4" 
                Grid.Row="2" Grid.RowSpan="2"
-               Visibility="Visible"/>
+               Visibility="Visible">
+            <Label.Effect>
+                <DropShadowEffect
+                 ShadowDepth="4"
+                 Direction="330"
+                 Color="Black"
+                 Opacity="0.5"
+                 BlurRadius="4"/>
+            </Label.Effect>
+        </Label>
         <Label x:Name="niceDayLabel" Content="Have a nice day"
                Foreground="#FFB026FF" 
                FontFamily="Beckman" FontSize="45"
                VerticalAlignment="Top" HorizontalAlignment="Center"
                Grid.Column="2" Grid.ColumnSpan="4" 
                Grid.Row="3" Grid.RowSpan="2" Margin="0,23,0,0"
-               Visibility="Visible"/>
+               Visibility="Visible">
+            <Label.Effect>
+                <DropShadowEffect
+                 ShadowDepth="4"
+                 Direction="330"
+                 Color="Black"
+                 Opacity="0.5"
+                 BlurRadius="4"/>
+            </Label.Effect>
+        </Label>
 
         <!-- Show Passwords section -->
         <Label x:Name="credentialsLabel" Content="Your Data:"

@@ -11,7 +11,16 @@
             <Label Content="StealthPass" 
                    HorizontalAlignment="Center" VerticalAlignment="Center"
                    FontSize="45" Margin="0,20,0,15" FontFamily="Lemon Milk"
-                   Foreground="#FFB026FF"/>
+                   Foreground="#FFB026FF">
+                <Label.Effect>
+                    <DropShadowEffect
+                 ShadowDepth="4"
+                 Direction="330"
+                 Color="Black"
+                 Opacity="0.5"
+                 BlurRadius="4"/>
+                </Label.Effect>
+            </Label>
             <Label Content="Username" FontFamily="Beckman"
                    HorizontalAlignment="Center"
                    FontSize="21" Foreground="#FFB026FF"/>

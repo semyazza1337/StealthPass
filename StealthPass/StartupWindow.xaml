@@ -23,7 +23,16 @@
             </Label>
             <Label Content="Username" FontFamily="Beckman"
                    HorizontalAlignment="Center"
-                   FontSize="21" Foreground="#FFB026FF"/>
+                   FontSize="21" Foreground="#FFB026FF">
+                <Label.Effect>
+                    <DropShadowEffect
+                 ShadowDepth="4"
+                 Direction="330"
+                 Color="Black"
+                 Opacity="0.5"
+                 BlurRadius="4"/>
+                </Label.Effect>
+            </Label>
             <TextBox x:Name="loginTextBox" TextAlignment="Center"
                      Margin="75,0,75,5" Height="25"
                      FontSize="15" 
@@ -32,7 +41,16 @@
             <Label Content="Password" FontFamily="Beckman"
                    HorizontalAlignment="Center"
                    FontSize="21" 
-                   Foreground="#FFB026FF" />
+                   Foreground="#FFB026FF">
+                <Label.Effect>
+                    <DropShadowEffect
+                 ShadowDepth="4"
+                 Direction="330"
+                 Color="Black"
+                 Opacity="0.5"
+                 BlurRadius="4"/>
+                </Label.Effect>
+            </Label>
             <PasswordBox x:Name="passwordTextBox" HorizontalContentAlignment="Center"
                      Margin="75,0,75,20" Height="25"
                      FontSize="15" 
@@ -41,7 +59,29 @@
             <Button Content="Login" FontFamily="Beckman"
                     Click="Button_Click" FontSize="14"
                     Margin="125,0,125,5" Height="32" 
-                    Background="#FFB026FF" Foreground="#FFEAD8D8"/>
+                    Background="#FFB026FF" Foreground="#FFEAD8D8">
+                <Button.Effect>
+                    <DropShadowEffect
+                 ShadowDepth="4"
+                 Direction="330"
+                 Color="Black"
+                 Opacity="0.5"
+                 BlurRadius="4"/>
+                </Button.Effect>
+            </Button>
+            <Button Content="Register" FontFamily="Beckman"
+                FontSize="14"
+                    Margin="125,0,125,5" Height="32" 
+                    Background="#FFB026FF" Foreground="#FFEAD8D8" Click="Button_Click_1">
+                <Button.Effect>
+                    <DropShadowEffect
+                 ShadowDepth="4"
+                 Direction="330"
+                 Color="Black"
+                 Opacity="0.5"
+                 BlurRadius="4"/>
+                </Button.Effect>
+            </Button>
         </StackPanel>
     </Grid>
 </Window>

@@ -131,11 +131,31 @@
         <Label x:Name="credentialsLabel" Content="Your Data:"
                Grid.Column="3" Grid.ColumnSpan="2"
                VerticalAlignment="Bottom" HorizontalAlignment="Center"
-               FontSize="20" FontFamily="Lemon Milk"
+               FontSize="20" FontFamily="Beckman"
                Foreground="#FFEAD8D8" Visibility="Hidden"/>
-        <ListView x:Name="credentialsListView" Margin="10 5 10 10"
-                  Grid.Row="1" Grid.Column="2"
-                  Grid.ColumnSpan="4" Grid.RowSpan="5" Visibility="Hidden"/>
+        <ListView x:Name="credentialsListView" Margin="10,5,10,7" Grid.Column="2" 
+                  Grid.ColumnSpan="4" Grid.RowSpan="5" 
+                  Visibility="Hidden" Height="370"
+                  Background="#FF2B2828" BorderBrush="#FF2B2828" Grid.Row="1">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock Text="{Binding Site}" FontSize="18"
+                                   FontFamily="Lemon Milk" FontWeight="Medium"
+                                   Margin="0,0,0,0"
+                                   Foreground="#FFB026FF" />
+                        <TextBlock Text="{Binding Email, StringFormat='Email/Login: {0}'}" FontSize="14"
+                                   FontFamily="Roboto" FontWeight="Medium"
+                                   Margin="5,0,0,0"
+                                   Foreground="#FAF9F6"/>
+                        <TextBlock Text="{Binding Pass, StringFormat='Password: {0}'}" FontSize="14"
+                                   FontFamily="Roboto" FontWeight="Medium" 
+                                   Margin="5,0,0,5"
+                                   Foreground="#FAF9F6"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
 
         <!-- Add Password section -->
         <Label x:Name="siteLabel" Content="Site:"

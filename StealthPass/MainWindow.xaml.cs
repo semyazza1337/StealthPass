@@ -1,19 +1,7 @@
 ﻿using SQLite;
 using StealthPass.Classes;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace StealthPass
 {
@@ -46,7 +34,7 @@ namespace StealthPass
             passTextBox.Visibility = Visibility.Collapsed;
             addCredentialsButton.Visibility = Visibility.Collapsed;
         }
-        
+
         private void showAddPassword()
         {
             siteLabel.Visibility = Visibility.Visible;
@@ -84,24 +72,24 @@ namespace StealthPass
                 Email = emailTextBox.Text,
                 Pass = passTextBox.Text
             };
-        
+
             using (SQLiteConnection connection = new SQLiteConnection(App.databasePath))
             {
                 connection.CreateTable<Credentials>();
                 connection.Insert(credentials);
             }
-        
+
             siteTextBox.Text = null;
             emailTextBox.Text = null;
             passTextBox.Text = null;
-        
+
             ReadDatabase();
         }
-        
+
         void ReadDatabase()
         {
             List<Credentials> credentials;
-            using(SQLiteConnection conn = new SQLiteConnection(App.databasePath))
+            using (SQLiteConnection conn = new SQLiteConnection(App.databasePath))
             {
                 conn.CreateTable<Credentials>();
                 credentials = conn.Table<Credentials>().ToList();

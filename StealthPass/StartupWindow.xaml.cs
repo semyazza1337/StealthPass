@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StealthPass.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -37,7 +38,7 @@ namespace StealthPass
                 MessageBox.Show("Wrong username or password!", "Login failed", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
-
+          
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             login();
@@ -49,6 +50,15 @@ namespace StealthPass
             {
                 login();
             }
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            User register = new User()
+            {
+                Username = loginTextBox.Text,
+                Password = passwordTextBox.Password
+            };
         }
     }
 }
